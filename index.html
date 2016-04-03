@@ -3,186 +3,11 @@
 <head lang="en">
 	<meta charset="UTF-8">
 	<title></title>
-	<style>
-		html {
-			font-size: 14px;
-			margin: 0;
-			padding: 0 ;
-			min-width: 100%;
-			min-height: 100%;
-			overflow: hidden;
-			overflow-y: auto;
-			font-family: verdana;
-			line-height: 1.636;
-		}
-		body {
-			display: block;
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-			min-height: 100%;
-			color: #000;
-			font-smoothing: antialiased;
-			-webkit-backface-visibility: hidden;
-			backface-visibility: hidden;
-			-webkit-text-size-adjust: 100%;
-			background-color: #fff;
-			box-sizing:border-box;
- 		}
-		body *{  box-sizing:border-box;}
-		header{position: relative;height:130px; background-color: #fcfcfc;}
-		header .top-border{position: absolute;top:0;left:0;width:100%;height:6px;background:url("assets/topborder.png") no-repeat left top;background-size: cover }
-		header .header-top{position: relative;height:90px}
-		header .header-top .logo{ width:110px;height:35px;left:30px;position:absolute;top:30px;background:url("assets/logo.png") no-repeat center;background-size: contain}
-		header .header-top .links{position:absolute;right:10px;top:30px;text-align: right;}
-		header .header-top .links .link{display: inline-block;margin:0 4px;line-height: 35px;vertical-align: middle;text-transform:uppercase;}
-		header .header-top .links .link a{display: block;text-decoration: none;}
-		header .header-top .links .link a:link,header .header-top .links .link a:visited,header .header-top .links .link a:active{color:black;}
-		header .header-top .links .button-link{
-			background-color:seagreen;color:white;text-shadow: 1px 1px 2px #999;
-			width:100px;text-align: center;
-			border:1px solid #888;border-radius: 4px;
-		}
-		header .header-top .links .text-link{}
-		header .header-top .links .link-join{ }
- 		header .header-top .links .link-signin a,header .header-top .links .link-signin a:link,header .header-top .links .link-signin a:visited,header .header-top .links .link-signin a:active{
-		    color:#888;}
-		header .menu-bar{height:40px;border-top:1px solid #bbb;line-height: 40px;position: relative}
-		header .menu-bar .menu-items{height:40px;list-style: none;padding: 0;margin: 0;font-size:.8rem; }
-		header .menu-bar .menu-items .menu-item{display: inline-block;list-style: none;text-transform:uppercase; padding:0 5px;position: relative;margin:0 5px; }
- 		header .menu-bar .menu-items .menu-item:not(.no-border):after{content:"|";overflow: hidden; position:absolute;right:-10px;top:14px;height:12px ;line-height: 10px;}
-		header .menu-bar .menu-items .menu-item a{display: block;text-decoration: none;}
-
-		header .menu-bar .menu-items .menu-item, header .menu-bar .menu-items .menu-item a:link, header .menu-bar .menu-items .menu-item a:visited, header .menu-bar .menu-items .menu-item a:active{
-			color:#999
-		}
-
-		header .menu-bar .callus{
-			position:absolute;text-align: center;right:10px;height: 20px;margin: auto 0;top:0;
-		}
-
-
-		section{position: relative; text-align: center;width: 810px;margin: 40px auto 20px auto;display: block;}
-		section>h5{
-			margin:30px 0;display: block;position: relative;
-		}
-		section>h5 .title-text{
-			border-bottom:1px solid #999 ;display: inline-block;
-		}
-		.hero-section h2{font-size: 2.8rem;color:darkblue;font-weight: 200}
-		.hero-section .hero-text{font-size: .9rem;color: #999;text-align: justify}
-		.why-leader { }
-		.why-leader-parts{display: block;height:440px}
-		.why-leader-part{display: inline-block;position:relative;height:450px;width:32%;text-align: center; vertical-align: text-top}
-		.why-leader-parts .img{display: block;height:200px;margin:0 auto;width:200px;background-position: center;background-repeat: no-repeat; border-bottom:2px solid #ccc; }
-		.why-leader-flag .img{background-image: url("assets/flag.png")}
-		.why-leader-rocket .img{background-image: url("assets/rocket.png")}
-		.why-leader-spaceman .img{background-image: url("assets/spaceman.png")}
-		.why-leader-parts .text{
-			height: 250px;text-align: justify;padding: 20px;
-			color:#999;font-size: .9rem;
-		}
-
-		.leader-team{}
-		.leader-team-members{
-			display: block;height:175px ;text-align: center;font-size: .8rem;
-		}
-		.leader-team-members .leader-team-member{
-			display: inline-block;margin: 0 10px;
-		}
-		.leader-team-members .leader-team-member img {
-			display: inline-block;
-			height: 130px;
-		}
-		.leader-team-members .leader-team-member .name {
-			color:cornflowerblue;
-		}
-		.leader-team-members .leader-team-member .country {
-			color:#999;
-		}
-		.carousal{ height:130px;overflow:hidden;width:98%;
-			white-space:nowrap;padding:5px;border:1px solid #aaa;
-		}
-		.carousal .carousal-inner{position:absolute;left:1px; height:120px;;
-			display:block;overflow:visible;white-space:nowrap;
-			transition:left .05s ease;
-		}
-		.carousal .item{ display:inline-block;width:100px;height:100px;
-			background:red;margin: 0 5px;border:1px solid #ccc;
-			text-align:center;line-height:100px;
-		}
-		.growing-community{
-			background: url("assets/toptal-community.png") no-repeat center;
-
-			height: 315px;
-		}
-		.become-leader form{margin:0;padding: 0;display: block;position: relative;text-align: center}
-		.become-leader-field{ border:1px solid #aaa;border-radius:5px;background-color:#fafafa;line-height:3rem; margin:5px auto;display:inline-block;width:48%;
-			position: relative;
-		}
-
-		.become-leader-field input,.become-leader-field textarea{width:100%;padding:0 0 0 30px;border: none;background: transparent;line-height:3rem;}
-		.become-leader-field.become-leader-comment{display: block;width:97%; }
-		.become-leader-field  textarea { height:8rem;}
-
-		.become-leader-field.become-leader-name::before{ position:absolute;top:1px;left:5px;height:3rem;width: 20px;background:url("assets/form-field-name.png") no-repeat center;content:' '   }
-		.become-leader-field.become-leader-email::before{ position:absolute;top:1px;left:5px;height:3rem;width: 20px;background:url("assets/form-field-email.png") no-repeat center;content:' '   }
-		.become-leader-field.become-leader-loc::before{ position:absolute;top:1px;left:5px;height:3rem;width: 20px;background:url("assets/form-field-loc.png") no-repeat center;content:' '   }
-		.become-leader-field.become-leader-twitter::before{ position:absolute;top:1px;left:5px;height:3rem;width: 20px;background:url("assets/form-field-twitter.png") no-repeat center;content:' '   }
-		.become-leader-field.become-leader-comment::before{ position:absolute;top:1px;left:5px;height:3.5rem;width: 20px;background:url("assets/form-field-comment.png") no-repeat center;content:' '  }
-		.become-leader-buttons{display: block;position: relative;text-align: right;padding-right:10px;  }
-		.become-leader-submit{width:280px;height:60px;line-height:60px;color: white;
-			background-color:seagreen;
-			border: 1px solid #bbbbbb;border-radius:5px; text-shadow: 1px 1px 2px #999;font-size: 1.2rem;  }
-
-		section.sample-profiles   .title-text{color:#aaa}
-		.sample-profiles-list{display: flex;flex-direction: row}
-		.sample-profiles-list .col{flex:1;    padding-left: 0;  }
-		.sample-profiles-list .col .list-item{ text-align: left;color:#999;font-size:.9rem   }
-	</style>
+    <link href="style/site.css" rel="stylesheet" />
+	<script src="js/site.js"> </script>
 	<script>
-
-
-			function carousal(){
-				var
-						wrap=document.querySelector(".carousal"), // outer container
-						wrapinner= document.querySelector(".carousal-inner"), //inner container
-						max=wrapinner.scrollWidth-wrap.offsetWidth, // position offset to the position
-						dir=1, // direction in which the carousal is moving
-						timeout=50, // time it waits before updating the position
-						increment=5, //  position offset to the position
-						timer = 0 // timer handle
-				function slide(){
-					//get current position
-					var  curr=Math.abs(parseFloat((wrapinner.style.left).replace(/[^\d\.\-]/g,""))||0)
-					//toggle the direction if needed
-					if((curr+1)>max && dir== 1){
-						dir=-1
-					} else if(curr<1 && dir==-1){
-						dir=1
-					}
-					//add(or sub) increment
-					curr=curr+(dir*increment)
-					//update style(position)
-					wrapinner.style.left=(0-curr)+"px";
-				}
-				function pause(){
-					if(timer){clearInterval(timer);timer=0}
-				}
-				function resume(){
-					if(!timer){timer=setInterval(slide,timeout)}
-				}
-				wrap.addEventListener("mouseover",pause)
-				wrap.addEventListener("mouseout",resume)
-				resume()
-
-				//var api={init:_init,start:resume, pause:pause, resume:resume}
-				//return api
-			}
-
-			function init(){
-				carousal()
-			}
+		//Todo use better approach
+		// - trying to keep it simple with minimal dependancies
 			window.onload=init
 	</script>
 </head>
@@ -194,13 +19,13 @@
 		<div class="header-top">
 			<div class="logo"></div>
 			<div class="links">
-				<span class="link text-link link-signin"><a href="#">SIGN IN</a></span>
+				<span class="link text-link link-sign-in"><a href="#">SIGN IN</a></span>
 				<span class="link text-link link-join"><a href="#">JOIN TOPTAL</a></span>
-				<button class="link button-link link-company">COMPANY</button>
-				<button class="link button-link link-developer">DEVELOPER</button>
+				<span class="link button-link link-company">COMPANY</span>
+				<span class="link button-link link-developer">DEVELOPER</span>
 			</div>
 		</div>
-		<div class="menu-bar">
+		<nav class="menu-bar">
 			<ul class="menu-items">
 				<li class="menu-item"><a href="#">WHY</a></li>
 				<li class="menu-item"><a href="#">HOW</a></li>
@@ -214,7 +39,7 @@
 			<div class="callus">
 				CALL US:888.604.3188
 			</div>
-		</div>
+		</nav>
 	</header>
 	<div class="content">
 		<section class="hero-section">
@@ -222,7 +47,7 @@
 		<div class="hero-text">
 			Join the ranks of an ever-growing international community through hosting exclusive events, attending popular conferences and seminars,
 			and crafting widely shared quality content.
-			The toptal leaders are the driving force in expanding the Toptal network by creating unique experinces and locating the most exceptional talent.
+			The toptal leaders are the driving force in expanding the Toptal network by creating unique experiences and locating the most exceptional talent.
 		</div>
 		</section>
 
@@ -235,73 +60,72 @@
 		<section class="why-leader">
 				<h5><span class="title-text">Why become a Toptal leader ?</span></h5>
 				<div class="why-leader-parts">
-					<span class="why-leader-part why-leader-flag">
+					<div class="why-leader-part why-leader-flag">
 						<div class="img"></div>
 						<div class="text">
 							Lead your community by hosting exclusive events,
 							doing targeted outreach and engaging with your network while leveraging Toptal's growing international brand.
 						</div>
-					</span>
-					<span class="why-leader-part why-leader-rocket">
+					</div>
+					<div class="why-leader-part why-leader-rocket">
 						<div class="img"></div>
 						<div class="text">
 							Help build our community of extraordinary talent as a Toptal ambassador in your city.
 							Be the foundation for growth and launch your profile's presence.
 						</div>
-					</span>
-					<span class="why-leader-part why-leader-spaceman">
+					</div>
+					<div class="why-leader-part why-leader-spaceman">
 						<div class="img"></div>
 						<div class="text">
-							Become a prominent thought leader in your local engineering community. Be recognized for networking the brightest anf modt onnovative minds together.
+							Become a prominent thought leader in your local engineering community. Be recognized for networking the brightest and most innovative minds together.
 							Work with incedible minds from across the globe.
 							Receive more opportunities to work with client projects.
-							Earn commission as yout Toptal community grows.
+							Earn commission as you  Toptal community grows.
 						</div>
-					</span>
+					</div>
 				</div>
 		</section>
 
 		<section class="leader-team">
 			<h5><span class="title-text">Meet the Toptal Leader Team</span></h5>
 			<div class="leader-team-members">
-				<span class="leader-team-member leader-team-member1">
+				<figure class="leader-team-member leader-team-member1">
 					<img src="assets/leader-mug.png"/>
-					<div class="identity">
+					<figcaption class="identity">
 						<div class="name">Lubos Volkov</div>
 						<div class="country">New Zealand</div>
-					</div>
-				</span>
-				<span class="leader-team-member leader-team-member2">
+					</figcaption>
+				</figure>
+				<figure class="leader-team-member leader-team-member2">
 					<img src="assets/leader-mug.png"/>
-					<div class="identity">
+					<figcaption class="identity">
 						<div class="name">Michal Vasko</div>
 						<div class="country">Slovakia</div>
-					</div>
-				</span>
-				<span class="leader-team-member leader-team-member3">
+					</figcaption>
+				</figure>
+				<figure class="leader-team-member leader-team-member3">
 					<img src="assets/leader-mug.png"/>
-					<div class="identity">
+					<figcaption class="identity">
 						<div class="name">Yummygum</div>
 						<div class="country">Sweeden</div>
-					</div>
-				</span>
-				<span class="leader-team-member leader-team-member4">
+					</figcaption>
+				</figure>
+				<figure class="leader-team-member leader-team-member4">
 					<img src="assets/leader-mug.png"/>
-					<div class="identity">
+					<figcaption class="identity">
 						<div class="name">Nicalos Will</div>
 						<div class="country">USA</div>
-					</div>
-				</span>
-				<span class="leader-team-member leader-team-member5">
+					</figcaption>
+				</figure>
+				<figure class="leader-team-member leader-team-member5">
 					<img src="assets/leader-mug.png"/>
 					<div class="identity">
 						<div class="name">Hanna Aase</div>
 						<div class="country">Russia</div>
 					</div>
-				</span>
+				</figure>
 				</div>
-				</span>
-			</section>
+ 			</section>
 
 			<section class="growing-community">
 
