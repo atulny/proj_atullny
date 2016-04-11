@@ -41,6 +41,8 @@ function carousal(config){
     var api={start:resume, pause:pause, resume:resume}
 	return api
 }
+//end caroudal
+
 function setupEvents(){
 	//setup events for hamburger menu
  	function setupMenu(link,menulink){
@@ -65,3 +67,4 @@ function init(){
 	var api=carousal({outer:".carousal",inner:".carousal-inner",increment:5,timeout:5})
 	api.start();
 }
+

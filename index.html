@@ -2,6 +2,7 @@
 <html>
 <head lang="en">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
     <link href="style/site.css" rel="stylesheet" />
 	<script src="js/site.js"> </script>
@@ -12,7 +13,21 @@
 	</script>
 </head>
 <body>
+<!--
+Using semantic elements as much  as possible
+ - document structure
+    body
+        header
+            nav
+        main
+          section
+            h2.title
+            content
+          .
+          .
+        footer
 
+-->
 
  	<header>
 		<div class="top-border"></div>
@@ -41,7 +56,7 @@
 				<li class="menu-item no-border"><a href="#signin">SIGN IN</a></li>
 			</ul>
 			<div class="callus">
-				CALL US:888.604.3188
+				CALL US:<tel>888.604.3188</tel>
 			</div>
 		</nav>
 	</header>
@@ -215,17 +230,19 @@
 					<li class="list-item">Visual Studio Developers</li>
 					<li class="list-item">Wordpress Developers</li>
 					<li class="list-item">XCode Developers</li>
+
 				</ul>
 			</div>
 
 		</section>
-    </main>
+     </main>
 
     <footer >
 	    <div class="content">
-<div class="copyright">&copy; Copyright 2010 - 2014 Toptal, LLC Privacy Policy,Terms of Service</div>
-	    <div class="assistance">Need Immediate assistance? Call us : 888.604.3188</div>
+<div class="copyright">&copy; copyright 2010 - 2014 Toptal, LLC Privacy Policy,Terms of Service</div>
+	    <div class="assistance">Need Immediate assistance? Call us : <tel>888.604.3188</tel></div>
 	    </div>
     </footer>
-</body>
+   </main>
+ </body>
 </html>
