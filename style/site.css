@@ -175,5 +175,5 @@ section.sample-profiles   .title-text{color:#aaa}
  }
 footer{height: 10rem;background-color: #4F76B5;color:white;position: relative;display: block;padding-top:6rem; }
 footer .content{display:block;position: relative;clear: both }
-footer .content .copyright{float:left; text-align: left}
-footer .content .assistance{float:right; text-align: right}
+footer .content .copyright{float:left; text-align: left;padding-left:1rem;}
+footer .content .assistance{float:right; text-align: right;padding-right:1rem;}

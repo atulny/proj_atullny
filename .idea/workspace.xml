@@ -6,29 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73087ef4-8d2a-4656-9134-d8031eafc2a7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/export_leaders.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/flag.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/flag_@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/form-field-comment.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/form-field-email.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/form-field-loc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/form-field-name.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/Originals/form-field-name.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/form-field-twitter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/leader-mug.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/Originals/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/photothumb.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/rocket.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/rocket_@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/spaceman.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/spaceman_@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/topborder.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/toptal-community.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/toptalbg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/style/site.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/site.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/site.css" afterPath="$PROJECT_DIR$/style/site.css" />
     </list>
     <ignored path="toptal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/style/site.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="92" column="41" selection-start-line="92" selection-start-column="41" selection-end-line="92" selection-end-column="41" />
+              <caret line="152" column="16" selection-start-line="152" selection-start-column="16" selection-end-line="152" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -62,8 +41,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.58965516">
-              <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.64827585">
+              <caret line="224" column="29" selection-start-line="224" selection-start-column="29" selection-end-line="224" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -106,8 +85,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/js/site.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/style/site.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -482,15 +461,15 @@
     <entry file="file://$PROJECT_DIR$/style/site.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="92" column="41" selection-start-line="92" selection-start-column="41" selection-end-line="92" selection-end-column="41" />
+          <caret line="152" column="16" selection-start-line="152" selection-start-column="16" selection-end-line="152" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58965516">
-          <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.64827585">
+          <caret line="224" column="29" selection-start-line="224" selection-start-column="29" selection-end-line="224" selection-end-column="29" />
           <folding />
         </state>
       </provider>
